@@ -1,0 +1,28 @@
+name: Install cat cafe project files
+on:
+  push:
+    paths:
+      - "catcafe-project.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Unpack project into repository root
+        run: |
+          mkdir -p .project-tmp
+          unzip -q catcafe-project.zip -d .project-tmp
+          cp -a .project-tmp/catcafe/. .
+          rm -rf .project-tmp catcafe-project.zip
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Add cat cafe website source and assets"
+            git push
+          fi
