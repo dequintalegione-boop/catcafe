@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16263a">
+<title>Тюменское котокафе — отдых среди котов на Максима Горького, 3к1</title>
+<meta name="description" content="Тюменское котокафе: уютный отдых в мурчащей атмосфере, мастер-классы и киновечера. Вторник–воскресенье 12:00–21:00, по предварительной записи. Тюмень, ул. Максима Горького, 3к1.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316263a'/%3E%3Cpath d='M14 46V20l10 8h16l10-8v26z' fill='%23f7c95c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="cat" viewBox="0 0 200 200"><path d="M150 168c30-6 40-40 18-58-8-7-4-16 6-14" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><path d="M46 182c-8-48 10-78 52-78s60 30 52 78z" fill="currentColor"/><path d="M58 74l-6-38 30 18c12-4 24-4 36 0l30-18-6 38c8 12 6 30-4 40-14 12-56 12-76 0-10-10-12-28-4-40z" fill="currentColor"/><g fill="var(--eye,#f7c95c)"><ellipse cx="82" cy="86" rx="6" ry="8"/><ellipse cx="118" cy="86" rx="6" ry="8"/></g></symbol>
+</svg>
+
+<header class="top">
+  <a class="logo" href="#top" aria-label="Тюменское котокафе — наверх"><svg viewBox="0 0 200 200"><use href="#cat"/></svg><span>Тюменское<br>котокафе</span></a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+  <nav id="nav">
+    <a href="#cats" hidden>Коты</a><a href="#homes" hidden>Нашли дом</a><a href="#prices">Тарифы</a><a href="#rules">Правила</a><a href="#events">Афиша</a><a href="#help">Помочь</a><a href="#contacts">Контакты</a>
+    <a class="btn small" href="tel:+79918969569">Записаться</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="status" id="status" aria-live="polite">Вторник–воскресенье · 12:00–21:00</p>
+    <h1>Посидеть у окна, пока рядом мурчит кот</h1>
+    <p class="lead">Антикафе в Тюмени, где можно пить кофе, играть в настольные игры, ходить на мастер-классы и знакомиться с котами. А если повезёт — встретить того самого и забрать домой.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+79918969569">Позвонить и записаться</a>
+      <a class="btn ghost" href="#prices">Сколько стоит</a>
+    </div>
+    <p class="note">Приходим только по предварительной записи: так котам спокойнее, а вам хватит места.</p>
+  </div>
+  <div class="window" aria-hidden="true">
+    <div class="glass"><i class="star s1"></i><i class="star s2"></i><i class="star s3"></i><i class="moon"></i>
+      <svg class="sitter" viewBox="0 0 200 200"><use href="#cat"/></svg></div>
+    <div class="sill"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Антикафе, где хозяева — коты</h2>
+  <div class="about-grid">
+    <p class="big">Вы платите за время, а не за чашку. Заходите в гости, гладьте тех, кто сам подойдёт, и не торопитесь.</p>
+    <ul class="facts">
+      <li><b>5,0</b> рейтинг на Яндекс Картах, 88 оценок</li>
+      <li><b>43</b> отзыва: гости хвалят атмосферу, персонал и настольные игры</li>
+      <li><b>1 этаж</b> дома 3к1 на Максима Горького, рядом остановка «Судостроительный завод»</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cats" id="cats" hidden>
+  <h2 id="cats-h">Живут здесь</h2>
+  <div class="cat-row"></div>
+  <div class="cat-actions"><button class="btn" id="chron-open" type="button" aria-haspopup="dialog">Котолетопись</button><span>Все коты кафе: и те, кто живёт здесь, и те, кто уже нашёл дом</span></div>
+  <p class="adopt">Хотите забрать кота домой? Расскажите об этом при записи или напишите нам.</p>
+</section>
+
+<section class="homes" id="homes" hidden>
+  <h2>Нашли дом</h2>
+  <p class="intro">Котокафе — не навсегда. Каждый кот проходит ветеринарный осмотр, а будущие хозяева заполняют анкету и беседуют с командой. Кота передают по договору ответственного содержания. По словам хозяйки, первые 17 котов нашли семьи за три месяца работы.</p>
+  <div class="home-row"></div>
+  <p class="small">Нажмите на кота, чтобы прочитать его историю.</p>
+</section>
+
+<section class="prices" id="prices">
+  <h2>Платите за время</h2>
+  <div class="price-wrap">
+    <div class="price p1"><h3>Базовый тариф</h3><p class="sum">450 ₽<span> первый час</span></p><p>Далее 5 ₽ за минуту. Стоп-чек — 900 ₽.</p></div>
+    <div class="price p2"><h3>Льготный тариф</h3><p class="sum">350 ₽<span> первый час</span></p><p>Далее 5 ₽ за минуту. Стоп-чек — 800 ₽. Кому доступен, уточняйте по телефону.</p></div>
+  </div>
+  <p class="small">Перед визитом уточните актуальные цены по телефону. Полные тарифы — <a href="https://vk.ru/@catcafe72-pravila-posescheniya-tumenskogo-kotokafe" target="_blank" rel="noopener">в статье ВКонтакте</a>.</p>
+</section>
+
+<section class="rules" id="rules">
+  <div class="rules-head">
+    <h2>Правила посещения</h2>
+    <p>Котокафе — дом для котов, а мы в гостях. Приходя, вы соглашаетесь с правилами заведения.</p>
+    <a class="more" href="https://vk.ru/@catcafe72-pravila-posescheniya-tumenskogo-kotokafe" target="_blank" rel="noopener">Читать полностью</a>
+  </div>
+  <div class="rule-cards">
+    <div class="rcard rc1"><h3>С котами</h3><ul><li>Не будите котов и не дёргайте за хвост, ушки, усы и лапки.</li><li>Не бегайте за котами и не поднимайте их на руки, если кот против.</li><li>Играйте только специальными игрушками из кафе.</li><li>Настройтесь на спокойный отдых: захочет побегать, кот сам сообщит.</li></ul></div>
+    <div class="rcard rc2"><h3>В кафе</h3><ul><li>Со своими питомцами приходить нельзя: у жильцов идёт адаптация.</li><li>Не кормите едой со стола, у котов свой режим и корм.</li><li>Снимайте без вспышки.</li><li>Нельзя курить, вейпить, пить алкоголь и приходить в опьянении.</li></ul></div>
+    <div class="rcard rc3"><h3>Детям и взрослым</h3><ul><li>Дети до 7 лет только под присмотром взрослого, до 14 лет лучше приходить со взрослыми.</li><li>Одевайтесь удобно: шерсть и когти могут «украсить» наряд.</li><li>За аллергические реакции на кошек администрация не отвечает.</li><li>За нарушение правил делают замечание, при повторном просят уйти.</li></ul></div>
+  </div>
+</section>
+
+<section class="events" id="events">
+  <h2>Афиша недели</h2>
+  <ul class="ev-list">
+    <li class="ev-none"><span>В данный момент афиши нет. Следите за новостями в социальных сетях:</span>
+      <div class="ev-links"><a href="https://t.me/catcafe72" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/catcafe72" target="_blank" rel="noopener">ВКонтакте</a><a href="https://max.ru/channel_catcafe72" target="_blank" rel="noopener">MAX</a></div></li>
+  </ul>
+  <p class="small">На все мероприятия нужна запись, мест мало.</p>
+</section>
+
+<section class="gallery" id="gallery">
+  <h2>Загляните внутрь</h2>
+  <div class="g-grid">
+    <button class="g g1" data-photo="assets/photo-1.jpg" aria-label="Открыть фото 1"><svg viewBox="0 0 200 200"><use href="#cat"/></svg></button>
+    <button class="g g2" data-photo="assets/photo-2.jpg" aria-label="Открыть фото 2"><svg viewBox="0 0 200 200"><use href="#cat"/></svg></button>
+    <button class="g g3" data-photo="assets/photo-3.jpg" aria-label="Открыть фото 3"><svg viewBox="0 0 200 200"><use href="#cat"/></svg></button>
+    <button class="g g4" data-photo="assets/photo-4.jpg" aria-label="Открыть фото 4"><svg viewBox="0 0 200 200"><use href="#cat"/></svg></button>
+  </div>
+  <p class="small">Больше фото — в <a href="https://t.me/catcafe72" target="_blank" rel="noopener">Telegram</a> и <a href="https://vk.ru/catcafe72" target="_blank" rel="noopener">ВКонтакте</a>.</p>
+</section>
+
+<section class="help" id="help">
+  <h2>Как помочь котам</h2>
+  <p class="intro">Гости часто спрашивают, чем можно помочь. Способов много, и каждый важен.</p>
+  <div class="help-grid">
+    <div class="hi hi1"><b>1</b><h3>Приходите в гости</h3><p>Каждое посещение идёт на корм, наполнитель и социализацию котов. Так им проще найти дом.</p></div>
+    <div class="hi"><b>2</b><h3>Ходите на мероприятия</h3><p>Мастер-классы и киновечера: приятный вечер и реальная поддержка подопечных.</p></div>
+    <div class="hi"><b>3</b><h3>Подарите сертификат</h3><p>Порадуйте близких и помогите котам. Напишите нам в личные сообщения <a href="https://vk.ru/catcafe72" target="_blank" rel="noopener">ВКонтакте</a>.</p></div>
+    <div class="hi"><b>4</b><h3>Выберите подарок из вишлиста</h3><p>Список вещей, которые оценят коты. <a href="https://vk.ru/@catcafe72-vishlist-podarki-dlya-kotikov" target="_blank" rel="noopener">Открыть вишлист</a></p></div>
+    <div class="hi"><b>5</b><h3>Расскажите друзьям</h3><p>Сделайте репост новостей или отправьте ссылку на наши соцсети.</p></div>
+    <div class="hi hi6"><b>6</b><h3>Станьте волонтёром передержки</h3><p>Коты проводят до 21 дня в гостях у волонтёров перед заселением в кафе. Подробности — <a href="https://vk.ru/@catcafe72-kak-pomoch-kotikam" target="_blank" rel="noopener">в статье ВКонтакте</a>.</p></div>
+  </div>
+  <details class="adopt-box">
+    <summary>Хотите отдать кота в котокафе?</summary>
+    <div class="adopt-in">
+      <p><b>Принять кота сразу не получится.</b> Есть очередь, ждать нужно не меньше месяца. Первыми принимают бездомных кошек: спасённых с улицы, оставшихся без ухода или в опасности. Домашних питомцев из-за аллергии, переезда, ремонта или рождения ребёнка принимают без преимущества. Котят не берут. Перед заселением нужен карантин не менее месяца, приём идёт по договору.</p>
+      <p><b>Нужно:</b> ветпаспорт; прививки (Мультифел дважды, Рабифел дважды или Рабикам один раз); кастрация или стерилизация; обработка от паразитов; свежий осмотр врача с общим анализом крови; отрицательные ПЦР на лейкемию, ВИК и панлейкопению; отрицательный анализ на токсоплазмоз.</p>
+      <p><b>Характер:</b> кошка спокойно относится к людям и другим кошкам, уверенно ходит в лоток и не проявляет выраженной агрессии.</p>
+      <p><b>Чтобы встать в очередь,</b> напишите нам имя и историю кота, где он сейчас, возраст, фото и готовы ли вы заниматься карантином и обследованием. <a href="https://vk.ru/@catcafe72-pravila-priema-koshek-v-kotokafe" target="_blank" rel="noopener">Полные правила приёма</a></p>
+    </div>
+  </details>
+</section>
+
+<section class="route" id="map">
+  <div class="route-info">
+    <h2>Как добраться</h2>
+    <p>Мы на первом этаже дома 3к1 на улице Максима Горького. Ближайшая остановка «Судостроительный завод» в 183 метрах от входа, по данным Яндекс Карт.</p>
+    <address>Тюмень, ул. Максима Горького, 3к1<br>Вторник–воскресенье, 12:00–21:00</address>
+    <div class="cta"><a class="btn" href="https://yandex.ru/maps/-/CXCNQ25H" target="_blank" rel="noopener">Построить маршрут</a><a class="btn ghost" href="https://go.2gis.com/34JF6" target="_blank" rel="noopener">Открыть в 2ГИС</a></div>
+  </div>
+  <div class="route-map">
+    <div class="map-fb" aria-hidden="true"><i class="rd r1"></i><i class="rd r2"></i><i class="rd r3"></i>
+      <div class="pin"><svg viewBox="0 0 48 64"><path d="M24 2C12 2 3 11 3 23c0 16 21 38 21 38s21-22 21-38C45 11 36 2 24 2z" fill="#e8762c"/><circle cx="24" cy="23" r="8" fill="#fff"/></svg><b>Тюменское котокафе</b><span>Максима Горького, 3к1</span></div></div>
+    <div id="ymap" role="region" aria-label="Карта: Тюменское котокафе"></div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <div>
+    <h2>Приходите в гости</h2>
+    <address>Тюмень, ул. Максима Горького, 3к1, 1 этаж<br>Вторник–воскресенье, 12:00–21:00. Понедельник — выходной.</address>
+    <a class="phone" href="tel:+79918969569">+7 (991) 896-95-69</a>
+    <div class="cta"><a class="btn" href="tel:+79918969569">Позвонить</a><a class="btn ghost" href="https://yandex.ru/maps/-/CXCNQ25H" target="_blank" rel="noopener">Маршрут на Яндекс Картах</a></div>
+  </div>
+  <div class="links"><a href="https://go.2gis.com/34JF6" target="_blank" rel="noopener">2ГИС</a><a href="https://t.me/catcafe72" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/catcafe72" target="_blank" rel="noopener">ВКонтакте</a><a id="maxlink" href="#" target="_blank" rel="noopener" hidden>MAX</a></div>
+</section>
+</main>
+
+<footer><span>© Тюменское котокафе</span><span>Сведения взяты из открытых страниц компании</span><a href="#top">Наверх</a></footer>
+
+<div class="lb chron" id="chron" role="dialog" aria-modal="true" aria-labelledby="chron-t" hidden><div class="chron-card"><button class="lb-x" aria-label="Закрыть">×</button>
+<h3 id="chron-t">Котолетопись</h3><p class="chron-lead">Все коты кафе: те, кто живёт здесь сейчас, и те, кто уже нашёл дом.</p>
+<div class="chron-tabs" role="group" aria-label="Фильтр"><button class="ct" type="button" data-f="all" aria-pressed="true">Все</button><button class="ct" type="button" data-f="live" aria-pressed="false">Живут в кафе</button><button class="ct" type="button" data-f="home" aria-pressed="false">Нашли дом</button></div>
+<div class="chron-list"></div></div></div>
+<div class="lb call" id="call" role="dialog" aria-modal="true" aria-labelledby="call-t" hidden><div class="call-card"><button class="lb-x" aria-label="Закрыть">×</button>
+<h3 id="call-t">Запись по телефону</h3><b class="call-num" id="call-num">+7 (991) 896-95-69</b>
+<p>Вторник–воскресенье, 12:00–21:00. Запись на посещение и мероприятия обязательна.</p>
+<div class="cta"><a class="btn" id="call-go" href="tel:+79918969569" hidden>Позвонить</a><button class="btn ghost" id="call-copy" type="button">Скопировать номер</button></div>
+<p class="small" id="call-msg" aria-live="polite"></p></div></div>
+<div class="lb st" id="story" role="dialog" aria-modal="true" aria-labelledby="st-t" hidden><div class="st-card"><button class="lb-x" aria-label="Закрыть">×</button><div class="st-pic"></div><div class="st-txt"><h3 id="st-t"></h3><p class="st-fate"></p><p class="st-p"></p><a class="st-src" target="_blank" rel="noopener"></a></div></div></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden><button class="lb-x" aria-label="Закрыть">×</button><div class="lb-body"></div></div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
